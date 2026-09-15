@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Brew & Bean | Coffee Shop</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+<nav class="navbar">
+<a href="#home" class="logo">Brew <span>&</span> Bean</a>
+<ul class="nav-links">
+<li><a href="#home">Home</a></li><li><a href="#menu">Menu</a></li><li><a href="#about">About</a></li><li><a href="#contact">Contact</a></li>
+</ul>
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+</nav>
+</header>
+
+<section class="hero" id="home">
+<div class="hero-content">
+<p class="eyebrow">FRESHLY BREWED EVERY DAY</p>
+<h1>Your Daily Cup of <span>Happiness.</span></h1>
+<p class="hero-description">Handcrafted coffee, fresh pastries and a warm place to slow down, meet friends and enjoy the moment.</p>
+<div class="hero-buttons">
+<a href="#menu" class="primary-btn">View Our Menu</a>
+<a href="#about" class="secondary-btn">Our Story</a>
+</div>
+</div>
+<div class="hero-coffee"><div class="coffee-card"><div class="coffee-cup">☕</div><p>Perfectly brewed</p><strong>Since 2018</strong></div></div>
+</section>
+
+<section class="features">
+<div class="feature"><div class="feature-icon">☕</div><h3>Fresh Coffee</h3><p>Quality beans roasted for rich and balanced flavor.</p></div>
+<div class="feature"><div class="feature-icon">🥐</div><h3>Fresh Pastries</h3><p>Delicious pastries prepared fresh for your morning.</p></div>
+<div class="feature"><div class="feature-icon">🤎</div><h3>Cozy Place</h3><p>A comfortable space to work, relax or meet friends.</p></div>
+</section>
+
+<section class="menu-section" id="menu">
+<div class="section-heading"><p>OUR MENU</p><h2>Favorites From The Bar</h2></div>
+<div class="menu-grid">
+<article class="menu-card"><div class="menu-icon">☕</div><div class="menu-info"><div class="menu-title"><h3>Classic Latte</h3><span>$4.50</span></div><p>Espresso with smooth steamed milk and a light foam.</p><button onclick="orderItem('Classic Latte')">Order</button></div></article>
+<article class="menu-card"><div class="menu-icon">🧊</div><div class="menu-info"><div class="menu-title"><h3>Iced Coffee</h3><span>$4.00</span></div><p>Cold brewed coffee served over ice for a refreshing taste.</p><button onclick="orderItem('Iced Coffee')">Order</button></div></article>
+<article class="menu-card"><div class="menu-icon">🍫</div><div class="menu-info"><div class="menu-title"><h3>Mocha</h3><span>$5.00</span></div><p>Espresso, chocolate and steamed milk topped with foam.</p><button onclick="orderItem('Mocha')">Order</button></div></article>
+<article class="menu-card"><div class="menu-icon">🥐</div><div class="menu-info"><div class="menu-title"><h3>Butter Croissant</h3><span>$3.25</span></div><p>Flaky, buttery and freshly baked for the perfect pairing.</p><button onclick="orderItem('Butter Croissant')">Order</button></div></article>
+</div>
+</section>
+
+<section class="about" id="about">
+<div class="about-visual"><div class="about-circle">☕</div></div>
+<div class="about-content">
+<p class="eyebrow">OUR STORY</p>
+<h2>A Little Coffee. A Lot Of Good Moments.</h2>
+<p>Brew & Bean started with a simple idea: make great coffee and create a place where people feel at home. Every cup is made with carefully selected beans and a lot of care.</p>
+<a href="#contact" class="primary-btn">Visit Us</a>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="section-heading"><p>COME SAY HELLO</p><h2>Let's Have Coffee</h2></div>
+<div class="contact-container">
+<div class="contact-details">
+<div><h3>📍 Location</h3><p>24 Main Street, Downtown</p></div>
+<div><h3>🕐 Opening Hours</h3><p>Every day · 8:00 AM - 10:00 PM</p></div>
+<div><h3>✉️ Email</h3><p>hello@brewandbean.com</p></div>
+</div>
+<form onsubmit="sendMessage(event)">
+<input type="text" placeholder="Your Name" required>
+<input type="email" placeholder="Your Email" required>
+<textarea placeholder="Your Message" required></textarea>
+<button type="submit" class="primary-btn">Send Message</button>
+</form>
+</div>
+</section>
+
+<footer><h2>Brew <span>&</span> Bean</h2><p>Good coffee. Good people. Good moments.</p><p class="copyright">© 2026 Brew & Bean. All Rights Reserved.</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
